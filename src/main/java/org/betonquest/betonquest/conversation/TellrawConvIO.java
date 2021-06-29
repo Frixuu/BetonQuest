@@ -63,7 +63,7 @@ public class TellrawConvIO extends ChatConvIO {
         for (final ChatColor color : colors.get("number")) {
             string.append(color);
         }
-        string.append("%number%. ");
+        string.append("> ");
         number = string.toString();
     }
 
