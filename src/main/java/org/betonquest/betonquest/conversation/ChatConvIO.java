@@ -63,7 +63,7 @@ public abstract class ChatConvIO implements ConversationIO, Listener {
         for (final ChatColor color : colors.get("player")) {
             string.append(color);
         }
-        string.append(name).append(ChatColor.RESET).append(": ");
+        string.append(name).append(ChatColor.DARK_GRAY).append(ChatColor.BOLD).append(" > ");
         for (final ChatColor color : colors.get("answer")) {
             string.append(color);
         }
