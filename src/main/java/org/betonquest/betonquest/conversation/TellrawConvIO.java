@@ -2,6 +2,7 @@ package org.betonquest.betonquest.conversation;
 
 import net.md_5.bungee.api.chat.BaseComponent;
 import net.md_5.bungee.api.chat.ClickEvent;
+import net.md_5.bungee.api.chat.ComponentBuilder;
 import net.md_5.bungee.api.chat.TextComponent;
 import org.apache.commons.lang3.StringUtils;
 import org.betonquest.betonquest.BetonQuest;
@@ -93,7 +94,7 @@ public class TellrawConvIO extends ChatConvIO {
     @Override
     public void display() {
         super.display();
-        conv.sendMessage(" ");
+        conv.sendMessage(new ComponentBuilder(" ").bold(true).create());
         for (int j = 1; j <= options.size(); j++) {
             // Build ColorString
             final TextComponent colorComponent = new TextComponent();
