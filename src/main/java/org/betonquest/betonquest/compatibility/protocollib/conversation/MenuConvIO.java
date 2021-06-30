@@ -686,7 +686,7 @@ public class MenuConvIO extends ChatConvIO {
      */
     @Override
     public boolean printMessages() {
-        return false;
+        return true;
     }
 
     @EventHandler(priority = EventPriority.LOWEST, ignoreCancelled = true)
