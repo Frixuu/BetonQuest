@@ -665,7 +665,8 @@ public class MenuConvIO extends ChatConvIO {
                 // Stop Listening for Packets
                 ProtocolLibrary.getProtocolManager().removePacketListener(packetAdapter);
 
-                Bukkit.getScheduler().runTask(BetonQuest.getInstance(), () -> stand.remove());
+                final ArmorStand standCopy = stand;
+                Bukkit.getScheduler().runTask(BetonQuest.getInstance(), () -> standCopy.remove());
                 stand = null;
             }
 
